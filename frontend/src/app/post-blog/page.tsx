@@ -17,6 +17,8 @@ import { FormProvider, useForm } from "react-hook-form";
 interface BlogPost {
   title: string;
   description: string;
+  author: string;
+  duration: number;
 }
 
 export default function PostBlog() {
@@ -24,6 +26,8 @@ export default function PostBlog() {
     defaultValues: {
       title: "",
       description: "",
+      author: "",
+      duration: 0,
     },
   });
   const [clearDescription, setClearDescription] = useState<boolean>(false);
@@ -39,6 +43,8 @@ export default function PostBlog() {
         body: JSON.stringify({
           title: form.getValues("title"),
           description: form.getValues("description"),
+          author: form.getValues("author"),
+          duration: form.getValues("duration"),
         }),
       });
       console.log({ response });
@@ -83,6 +89,34 @@ export default function PostBlog() {
                         setClearDescription(clearValue);
                       }}
                     />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="author"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Author</FormLabel>
+
+                  <FormControl>
+                    <Input placeholder="author" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="duration"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Duration (in mins)</FormLabel>
+
+                  <FormControl>
+                    <Input placeholder="duration" type="number" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>

@@ -36,8 +36,7 @@ app.post("/create-blogpost", async (req, res) => {
   console.log("inserting = ", req.body);
   try {
     const out = await blog.insertOne({
-      title: req.body.title,
-      description: req.body.description,
+      ...req.body,
       dateTime: getCurrentTimeIST(),
       likes: 0,
     });
