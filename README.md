@@ -61,6 +61,29 @@ npm install
 npm start
 ```
 
+#### Usage
+
+NavLinks:
+
+- **Home:** to view all the blogs
+- **Blogs:** to create a blog
+
+frontend urls:
+
+- **/** (to view all blog posts)
+- **/post-blogs** (to create blogs)
+- **/blog/[id]** (to view a blog)
+
+backend end-points:
+
+- **/fetch-all-blogs/?page=page_no&size=size&pinned=pinned** (to create blogs)
+  - _page no._: the current page to be loaded (pagination)
+  - _size no._: of blogs to be loaded for each page
+  - _pinned no._: of blogs to be pinned in the home page
+- **/fetch-blog?id=blog_id** (to fetch individual blogs)
+- **/create-blogpost** (to create a blog post)
+- **/update-likes** (update likes for a specific blog post)
+
 #### Images
 
 - Main Blog Page
