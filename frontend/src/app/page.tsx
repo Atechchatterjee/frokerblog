@@ -1,5 +1,6 @@
 "use client";
 import Navbar from "@/components/Navbar";
+import NewsLetterSubscription from "@/components/NewsletterSubscription";
 import Tiptap from "@/components/Tiptap";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -201,6 +202,7 @@ export default function Home() {
               </Button>
             </div>
           </div>
+          <NewsLetterSubscription />
         </section>
       </main>
     </CookiesProvider>
