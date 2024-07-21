@@ -4,6 +4,11 @@ This is the submission for “Full Stack Web Development Assignment (Using MERN)
 
 Technology Stack used: React + Nextjs + Tailwind CSS (for frontend), Nodejs + Express + Mongodb (for backend)
 
+#### Deployment link
+
+- vercel deployment (frontend): [https://frokerblog.vercel.app](https://frokerblog.vercel.app)
+- railway deployment (backend): [frokerblog-production.up.railway.app](frokerblog-production.up.railway.app)
+
 #### Requirements
 
 - Compulsory
@@ -18,7 +23,7 @@ Technology Stack used: React + Nextjs + Tailwind CSS (for frontend), Nodejs + Ex
 - Optional
 
   - [x] Newsletter subscription (for frontend)
-  - [x] Hosted - (frontend - netlify, backend node.js - railways, mongodb - MongoAtlas)
+  - [x] Hosted - (frontend - vercel, backend node.js - railways, mongodb - MongoAtlas)
 
 - Additional Features
   - [x] Rich Text Support (using [Tiptap](https://tiptap.dev/))
