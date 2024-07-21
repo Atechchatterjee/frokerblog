@@ -22,3 +22,14 @@ Technology Stack used: React + Nextjs + Tailwind CSS (for frontend), Nodejs + Ex
 
 - Additional Features
   - [x] Rich Text Support (using [Tiptap](https://tiptap.dev/))
+
+#### Images
+
+- Main Blog Page
+  ![main-blog-page](https://utfs.io/f/618eeda0-73e2-4045-a9e3-f794f77fa988-1icsr2.png)
+  ![main-blog-page-2](https://utfs.io/f/9b12f54f-3e18-490e-a4ec-18dab7726440-g3yu2u.png)
+- Individual Blog Page
+  ![individual-blog-page](https://utfs.io/f/e4a2e3cf-ce64-4f41-b22c-7ebdfbbd4374-g3ud2s.png)
+
+- Blog Content Creation Page
+  ![blog-content-creation-page](https://utfs.io/f/602b6f47-da37-4c2f-a469-2513b263b2d6-g3ud59.png)
