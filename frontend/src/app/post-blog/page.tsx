@@ -56,7 +56,10 @@ export default function PostBlog() {
   return (
     <main>
       <Navbar />
-      <Card className="mt-[10rem] max-w-[55rem] min-w-[40rem] mx-auto p-4">
+      <h1 className="mt-[8rem] text-2xl text-center font-semibold">
+        Create Blog Post
+      </h1>
+      <Card className="mt-[2rem] max-w-[55rem] min-w-[40rem] mx-auto p-4 mb-[3rem]">
         <FormProvider {...form}>
           <form className="flex flex-col space-y-2" onSubmit={handleSubmit}>
             <FormField
