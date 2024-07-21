@@ -1,5 +1,7 @@
 import { MongoClient } from "mongodb";
 
+require("dotenv").config();
+
 export const mongoClient = new MongoClient(process.env.MONGO_URI ?? "");
 
 export const database = mongoClient.db("frokerblog");

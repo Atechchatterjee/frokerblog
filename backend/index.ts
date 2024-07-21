@@ -3,6 +3,8 @@ import cors from "cors";
 import { blog, getCurrentTimeIST } from "./lib/utils";
 import { ObjectId } from "mongodb";
 
+require("dotenv").config();
+
 const app = express();
 const port = 8000;
 
