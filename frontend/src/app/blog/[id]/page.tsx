@@ -12,6 +12,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa6";
 import { Button } from "@/components/ui/button";
 import { useCookies } from "react-cookie";
+import { SERVER_URL } from "@/lib/constants";
 
 export default function Blog({
   params,
@@ -34,7 +35,7 @@ export default function Blog({
 
   useEffect(() => {
     (async () => {
-      return fetch(`http://localhost:8000/fetch-blog/?id=${params.id}`, {
+      return fetch(`${SERVER_URL}/fetch-blog/?id=${params.id}`, {
         method: "GET",
       });
     })().then(async (res) => {
@@ -54,7 +55,7 @@ export default function Blog({
 
   async function updateLikes(noLikes: number) {
     try {
-      await fetch(`http://localhost:8000/update-likes?id=${blog._id}`, {
+      await fetch(`${SERVER_URL}/update-likes?id=${blog._id}`, {
         method: "POST",
         headers: {
           Accept: "application/json",

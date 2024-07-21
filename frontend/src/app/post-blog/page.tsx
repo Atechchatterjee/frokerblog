@@ -11,6 +11,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { SERVER_URL } from "@/lib/constants";
 import { useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 
@@ -34,7 +35,7 @@ export default function PostBlog() {
 
   async function handleSubmit() {
     try {
-      const response = await fetch("http://localhost:8000/create-blogpost", {
+      const response = await fetch(`${SERVER_URL}/create-blogpost`, {
         method: "POST",
         headers: {
           Accept: "application/json",

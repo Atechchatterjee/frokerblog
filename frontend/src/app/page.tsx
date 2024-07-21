@@ -4,6 +4,7 @@ import NewsLetterSubscription from "@/components/NewsletterSubscription";
 import Tiptap from "@/components/Tiptap";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { SERVER_URL } from "@/lib/constants";
 import { parseJSONSafely, fetchDummyImages } from "@/lib/utils";
 import { useEffect, useState } from "react";
 import { CookiesProvider } from "react-cookie";
@@ -19,7 +20,7 @@ export default function Home() {
     return new Promise(async (resolve, reject) => {
       try {
         const res = await fetch(
-          `http://localhost:8000/fetch-all-blogs?page=${currentPageCount}&size=${size}&pinned=3`,
+          `${SERVER_URL}/fetch-all-blogs?page=${currentPageCount}&size=${size}&pinned=3`,
           {
             method: "GET",
           }
