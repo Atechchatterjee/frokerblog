@@ -117,7 +117,7 @@ export default function Home() {
                 {pinnedBlogs
                   .filter((_, i) => i > 0)
                   .map((pinnedBlog, i) => (
-                    <Card className="flex flex-1 gap-3 p-4 py-auto">
+                    <Card className="flex flex-1 gap-3 p-4 py-auto" key={i}>
                       <img
                         src={images[i + 1]}
                         alt={"img-2"}
@@ -154,7 +154,10 @@ export default function Home() {
             <h2 className="text-4xl font-medium mb-[2rem]">Recent Post</h2>
             <div className="grid grid-cols-3 gap-4">
               {blogs?.map((blog, i) => (
-                <Card className="flex flex-col p-4 gap-4 max-w-[30rem] max-h-[30rem]">
+                <Card
+                  className="flex flex-col p-4 gap-4 max-w-[30rem] max-h-[30rem]"
+                  key={i}
+                >
                   <img
                     src={images[i + 3]}
                     alt={`img-${i}`}
