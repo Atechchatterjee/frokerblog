@@ -23,6 +23,39 @@ Technology Stack used: React + Nextjs + Tailwind CSS (for frontend), Nodejs + Ex
 - Additional Features
   - [x] Rich Text Support (using [Tiptap](https://tiptap.dev/))
 
+#### Installation
+
+Clone the git repo
+
+```bash
+git clone https://github.com/Atechchatterjee/frokerblog
+```
+
+Run the frontend on dev
+
+```bash
+cd frontend/
+npm install
+npm run dev
+```
+
+Run the frontend in production
+
+```bash
+cd frontend/
+npm install
+npm run build
+npm start
+```
+
+Run the backend in production
+
+```bash
+cd backend/
+npm install
+npm start
+```
+
 #### Images
 
 - Main Blog Page
